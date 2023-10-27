@@ -11,7 +11,8 @@ Filters tested spatially:
   Erode / Dilate (not found to be useful)
 
 # Spectral Filters
-Spectral filters not only consider a 2D kernel(for example 5 x 5 pixels) but work across channels to reduce inter-channel noise.
+Spectral filters not only consider a 2D kernel(for example 5 x 5 pixels) but work across channels to reduce inter-channel noise. This is achieved by filtering
+a kernel consisting of a pixel and its corresponding pixels in the other channels. This kernel size is therefore (1x1xn) depending on n channels.
 Filters tested spectrally:  
   Median Blur  
   Gaussian Blur  
@@ -23,5 +24,6 @@ Output for each test consisted of:
   SNR Graphs comparing the image before and after processing - By filtering across all channels inter-channel noise can be reduced.  
   Pixel Intensity Graph comparing before and after. If pixel intensities drastically reduce across several channels the filter is likely very lossy
   
-  Note: Processed input images and some text have been censored with red
+  Note: Processed input images and some text have been censored with red  
+  
   ![image](https://github.com/dandertery/ImageProcessingProgram/assets/110602627/bcb4c544-c1ff-487a-951f-c67842ff6a95)
