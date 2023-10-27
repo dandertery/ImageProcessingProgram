@@ -12,15 +12,16 @@ Filters tested spatially:
 
 # Spectral Filters
 Spectral filters not only consider a 2D kernel(for example 5 x 5 pixels) but work across channels to reduce inter-channel noise.
-Filters tested spectrally:
+Filters tested spectrally:  
   Median Blur  
   Gaussian Blur  
 # Objective and Visual Tests
 
 
 Output for each test consisted of:
-  Raw SNR(Signal to Noise ratio) Data - useful to detect any anomalies during development or anomalies of the input channel image
-  SNR Graphs comparing the image before and after processing - By filtering across all channels inter-channel noise can be reduced.
+  Raw SNR(Signal to Noise ratio) Data - useful to detect any anomalies during development or anomalies of the input channel image  
+  SNR Graphs comparing the image before and after processing - By filtering across all channels inter-channel noise can be reduced.  
+  Pixel Intensity Graph comparing before and after. If pixel intensities drastically reduce across several channels the filter is likely very lossy
   
-  Note: Images and some text have been censored with red
+  Note: Processed input images and some text have been censored with red
   ![image](https://github.com/dandertery/ImageProcessingProgram/assets/110602627/bcb4c544-c1ff-487a-951f-c67842ff6a95)
