@@ -5,16 +5,16 @@ and the intensities reformatted into a set of z (channels of) x*y (image) matric
 # Spatial Filters
 Spatial filters work across each channel individually, taking a kernel size and filter intensity to smooth out the image channel through averaging of values in the kernel. This removes artifacts and harsh edges.
 Filters tested spatially:
-  Median Blur
-  Gaussian Blur
-  Bilateral Filter
+  Median Blur  
+  Gaussian Blur  
+  Bilateral Filter  
   Erode / Dilate (not found to be useful)
 
 # Spectral Filters
 Spectral filters not only consider a 2D kernel(for example 5 x 5 pixels) but work across channels to reduce inter-channel noise.
 Filters tested spectrally:
-  Median Blur
-  Gaussian Blur
+  Median Blur  
+  Gaussian Blur  
 # Objective and Visual Tests
 
 
